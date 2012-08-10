@@ -4,15 +4,19 @@
 
 Instead, here's how you can include a module into your project: 
 
-	var fooModule = require('foo');
-	
-	fooModule.someNewFunction();
-	
+```javascript
+var fooModule = require('foo');
+
+fooModule.someNewFunction();
+```
+
 That's it! You call the global `require()` function, and assign it to a variable. That variable then contains the exported members of the `foo` module. This paradigm is essential to developing in Node.js, since all the core libraries are considered modules, and must be assigned in this way.
 
 You can also specify a certain directory to look for a module:
 
-	var farAway = require(../../../bar);
+```javascript
+var farAway = require('../../../bar');
+```
 
 Technically, you don't even need to specify the `..` directory change. Node.js always looks in the curent directory for a module. If it doesn't find it, it walks up the directory, checking each parent, looking for either a file matching your module's name (`bar.js`), or, a folder called `node_modules` that contains your file. If it can't find a file matching your module name by the time it hits the root directory (`'/'`), Node.js throws an exception.
 
