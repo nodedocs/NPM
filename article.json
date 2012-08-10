@@ -3,7 +3,10 @@
     "description": "The Node Pacakge Manager",
     "date": "Fri Aug 26 2011 03:08:50 GMT-0700 (PST)",
     "tags": ["modules", "packages", "npm"],
-    "authors": ["Garen J. Torikian"],
+    "authors": [{
+      "name": "Garen J. Torikian",
+      "url": "https://github.com/gjtorikian"
+    }],
     "categories": [
       ["Modules and NPM"]
     ]
